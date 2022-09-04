@@ -5,13 +5,14 @@ This file is part of Statistical Parameter Optimization Tool for Python (SPOTPY)
 :author: Tobias Houska
 """
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
-from __future__ import unicode_literals
-from . import _algorithm
-import numpy as np
+from __future__ import absolute_import, division, print_function, unicode_literals
+
 import random
+
+import numpy as np
+
+from . import _algorithm
+
 
 class lhs(_algorithm):
     """
@@ -51,7 +52,7 @@ class lhs(_algorithm):
             * True:  Simulation results will be saved
             * False: Simulation results will not be saved
         """
-        kwargs['algorithm_name'] = 'Latin Hypercube Sampling (LHS)'
+        kwargs["algorithm_name"] = "Latin Hypercube Sampling (LHS)"
         super(lhs, self).__init__(*args, **kwargs)
 
     def sample(self, repetitions):
@@ -61,17 +62,18 @@ class lhs(_algorithm):
         repetitions: int
             maximum number of function evaluations allowed during optimization
         """
-        self.set_repetiton(repetitions)
-        print('Starting the LHS algotrithm with '+str(repetitions)+ ' repetitions...')
-        print('Creating LatinHyperCube Matrix')
+        self.set_repetition(repetitions)
+        print(
+            "Starting the LHS algotrithm with " + str(repetitions) + " repetitions..."
+        )
+        print("Creating LatinHyperCube Matrix")
         # Get the names of the parameters to analyse
-        names = self.parameter()['name']
+        names = self.parameter()["name"]
         # Define the jump size between the parameter
         segment = 1 / float(repetitions)
         # Get the minimum and maximum value for each parameter from the
         # distribution
-        parmin, parmax = self.parameter()['minbound'], self.parameter()[
-            'maxbound']
+        parmin, parmax = self.parameter()["minbound"], self.parameter()["maxbound"]
 
         # Create an matrx to store the parameter sets
         matrix = np.empty((repetitions, len(parmin)))
@@ -85,9 +87,8 @@ class lhs(_algorithm):
             random.shuffle(matrix[:, i])
 
         # A generator that produces the parameters
-        param_generator = ((rep, matrix[rep])
-                           for rep in range(int(repetitions)))
+        param_generator = ((rep, matrix[rep]) for rep in range(int(repetitions)))
         for rep, randompar, simulations in self.repeat(param_generator):
-            # A function that calculates the fitness of the run and the manages the database 
+            # A function that calculates the fitness of the run and the manages the database
             self.postprocessing(rep, randompar, simulations)
         self.final_call()

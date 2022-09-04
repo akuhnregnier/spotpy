@@ -6,8 +6,8 @@ This file is part of Statistical Parameter Estimation Tool (SPOTPY).
 
 :author: Tobias Houska
 
-:paper: Houska, T., Kraft, P., Chamorro-Chavez, A. and Breuer, L.: 
-SPOTting Model Parameters Using a Ready-Made Python Package, 
+:paper: Houska, T., Kraft, P., Chamorro-Chavez, A. and Breuer, L.:
+SPOTting Model Parameters Using a Ready-Made Python Package,
 PLoS ONE, 10(12), e0145180, doi:10.1371/journal.pone.0145180, 2015.
 
 Imports the different algorithms from this package.
@@ -17,7 +17,7 @@ To reduce dependencies, one may select here just the needed algorithm.
 
 
 
-from ._algorithm import _algorithm
+from ._algorithm import _algorithm, _RunStatistic
 from .demcz import demcz     # Differential Evolution Markov Chain
 from .lhs import lhs         # Latin Hypercube Sampling
 from .mcmc import mcmc       # Metropolis Markov Chain Monte Carlo

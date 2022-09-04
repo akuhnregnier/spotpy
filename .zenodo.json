@@ -1,0 +1,73 @@
+{
+    "title": "SPOTPY",
+    "upload_type": "software",
+    "creators": [
+        {
+          "affiliation": "Justus-Liebig-University",
+          "name": "Tobias Houska"
+        },
+        {
+          "name": "Ben"
+        },
+        {
+          "affiliation": "Justus-Liebig Universit\u00e4t",
+          "name": "Philipp Kraft"
+        },
+        {
+          "affiliation": "Google Inc.",
+          "name": "Havan Agrawal"
+        },
+        {
+          "affiliation": "Justus-Liebig-University",
+          "name": "Florian Ulrich Jehn"
+        },
+        {
+          "affiliation": "University of Wuppertal",
+          "name": "Patrick Lauer"
+        },
+        {
+          "affiliation": "EC Joint Research Centre",
+          "name": "Iacopo"
+        },
+        {
+          "name": "Ashish Vinayak"
+        },
+        {
+          "name": "kbstn"
+        },
+        {
+          "name": "gitporst"
+        },
+        {
+          "affiliation": "University of Canberra",
+          "name": "Juan Castilla-Rho"
+        },
+        {
+          "affiliation": "Commonwealth Scientific and Industrial Research Organisation",
+          "name": "J-M"
+        },
+        {
+          "name": "Cecile"
+        },
+        {
+          "affiliation": "@idiv-biodiversity",
+          "name": "Christian Krause"
+        },
+        {
+          "affiliation": "Murray-Darling Basin Authority",
+          "name": "Jong Lee"
+        },
+        {
+          "affiliation": "INRAE (HYCAR Research Unit)",
+          "name": "Thibault Hallouin"
+        },
+        {
+          "name": "Yantong Wu"
+        },
+        {
+            "affiliation": "Imperial College London",
+            "name": "Alexander Kuhn-Regnier",
+            "orcid": "0000-0003-0247-451X"
+        }
+    ]
+}
