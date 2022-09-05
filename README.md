@@ -9,7 +9,7 @@ A Statistical Parameter Optimization Tool for Python
 [![License][license-image]][license-link]
 [![Coverage Status](https://coveralls.io/repos/github/thouska/spotpy/badge.svg?branch=master)](https://coveralls.io/github/thouska/spotpy?branch=master)
 [![Documentation Status](https://readthedocs.org/projects/spotpy/badge/?version=latest)](https://readthedocs.org/projects/spotpy/badge/?version=latest)
-[![DOI](https://zenodo.org/badge/47562322.svg)](https://zenodo.org/badge/latestdoi/47562322)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7051689.svg)](https://doi.org/10.5281/zenodo.7051689)
 
 [pypi-v-image]: https://img.shields.io/pypi/v/spotpy.png
 [pypi-v-link]: https://pypi.python.org/pypi/spotpy
@@ -25,13 +25,13 @@ A Statistical Parameter Optimization Tool for Python
 Purpose
 =================
 
-SPOTPY is a Python framework that enables the use of Computational optimization techniques for calibration, uncertainty 
+SPOTPY is a Python framework that enables the use of Computational optimization techniques for calibration, uncertainty
 and sensitivity analysis techniques of almost every (environmental-) model. The package is puplished in the open source journal PLoS One:
 
-Houska, T., Kraft, P., Chamorro-Chavez, A. and Breuer, L.: SPOTting Model Parameters Using a Ready-Made Python Package, PLoS ONE, 
+Houska, T., Kraft, P., Chamorro-Chavez, A. and Breuer, L.: SPOTting Model Parameters Using a Ready-Made Python Package, PLoS ONE,
 10(12), e0145180, doi:[10.1371/journal.pone.0145180](http://journals.plos.org/plosone/article?id=10.1371%2Fjournal.pone.0145180 "SPOTting Model Parameters Using a Ready-Made Python Package"), 2015
- 
-The simplicity and flexibility enables the use and test of different 
+
+The simplicity and flexibility enables the use and test of different
 algorithms of almost any model, without the need of complex codes::
 
 	sampler = spotpy.algorithms.sceua(model_setup())     # Initialize your model with a setup file
@@ -44,17 +44,17 @@ algorithms of almost any model, without the need of complex codes::
 Features
 =================
 
-Complex algorithms bring complex tasks to link them with a model. 
-We want to make this task as easy as possible. 
+Complex algorithms bring complex tasks to link them with a model.
+We want to make this task as easy as possible.
 Some features you can use with the SPOTPY package are:
 
-* Fitting models to evaluation data with different algorithms. 
-  Available algorithms are: 
-  
+* Fitting models to evaluation data with different algorithms.
+  Available algorithms are:
+
   * Monte Carlo (`MC`)
   * Markov-Chain Monte-Carlo (`MCMC`)
   * Maximum Likelihood Estimation (`MLE`)
-  * Latin-Hypercube Sampling (`LHS`) 
+  * Latin-Hypercube Sampling (`LHS`)
   * Simulated Annealing (`SA`)
   * Shuffled Complex Evolution Algorithm (`SCE-UA`)
   * Differential Evolution Markov Chain Algorithm (`DE-MCz`)
@@ -97,7 +97,7 @@ Some features you can use with the SPOTPY package are:
   * Skewness
   * compare percentiles of discharge
 
-* Prebuild parameter distribution functions: 
+* Prebuild parameter distribution functions:
 
   * Uniform
   * Normal
@@ -112,7 +112,7 @@ Some features you can use with the SPOTPY package are:
   of a model.
 
 * Multi-objective support
- 
+
 * MPI support for fast parallel computing
 
 * A progress bar monitoring the sampling loops. Enables you to plan your coffee brakes.
